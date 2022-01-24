@@ -24,9 +24,13 @@
     "package.json": "npx sort-package-json"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "ahooks": "^3.1.8",
+    "classnames": "^2.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-page-scroller": "^2.2.1"
+    "react-page-scroller": "^2.2.1",
+    "react-router-dom": "^6.2.1"
   },
   "devDependencies": {
     "@0x219/commitlint-config": "1.0.2",
@@ -47,6 +51,7 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "husky": "7.0.4",
+    "less": "^4.1.2",
     "lint-staged": "12.1.7",
     "prettier": "2.5.1",
     "sort-package-json": "1.53.1",

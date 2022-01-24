@@ -1,22 +1,18 @@
-import React, { useState } from 'react'
-import ReactPageScroller from 'react-page-scroller';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function App(): JSX.Element {
+import { routes, IRoute } from "./routes";
 
-  const [currentPage, setCurrentPage] = useState<number>()
+const buildRoutes = (routes: IRoute[]) =>
+  routes.map((route) => (
+    <Route path={route.path} element={route.component} key={route.path}>
+      {route.childRoutes && buildRoutes(route.childRoutes)}
+    </Route>
+  ));
 
+export default function App() {
   return (
-    <div style={{ paddingTop: 20 }}>
-      <div style={{ position: 'fixed', top: 0 }}>1</div>
-      <ReactPageScroller
-        pageOnChange={setCurrentPage}
-        customPageNumber={currentPage}
-        containerHeight="calc(100vh - 20px)"
-      >
-        <div>1asdasd</div>
-        <div>2asdasd</div>
-        <div>3asdasd</div>
-      </ReactPageScroller>
-    </div>
-  )
+    <Router>
+      <Routes>{buildRoutes(routes)}</Routes>
+    </Router>
+  );
 }

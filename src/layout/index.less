@@ -1,0 +1,30 @@
+.sophon-page {
+  padding-top: 104px;
+  padding-bottom: 60px;
+}
+
+.sophon-page-content {
+  display: flex;
+  height: calc(100vh - 60px - 104px);
+  overflow-y: auto;
+}
+
+.sophon-page-without-header {
+  padding-top: 0;
+  .sophon-page-content {
+    height: calc(100vh - 60px);
+  }
+}
+
+.sophon-page-without-footer {
+  padding-bottom: 0;
+  .sophon-page-content {
+    height: calc(100vh - 104px);
+  }
+}
+
+.sophon-page-without-header.sophon-page-without-footer {
+  .sophon-page-content {
+    height: 100vh;
+  }
+}

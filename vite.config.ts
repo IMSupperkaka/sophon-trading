@@ -12,7 +12,9 @@ const defineConfig: UserConfigFn = ({ command, mode }) => {
     plugins: [
       react(),
       tsconfigPaths(),
-      legacy(),
+      legacy({
+        targets: ["> 0.5%", "last 2 versions", "Firefox ESR", "not dead"],
+      }),
       mkcert({
         source: "coding",
       }),
@@ -26,9 +28,6 @@ const defineConfig: UserConfigFn = ({ command, mode }) => {
           },
         },
       },
-    },
-    define: {
-      "global": {},
     },
   };
   return config;
