@@ -9,7 +9,7 @@ import "./index.less";
 
 const withoutHeaderPaths = ["/"];
 
-const withoutFooterPaths = ["/services"];
+const withoutFooterPaths = ["/services", "/occupation"];
 
 const Main: React.FC = () => {
   const location = useLocation();
