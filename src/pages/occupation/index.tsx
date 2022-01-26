@@ -2,6 +2,8 @@ import React from "react";
 
 import ResponseContainer from "../../components/response-container";
 
+import bg from "../../static/occupation-bg.png";
+
 import "./index.less";
 
 const Services: React.FC = () => {
@@ -14,6 +16,7 @@ const Services: React.FC = () => {
           thinking and long-term industry exchanges are also viable way to
           getting a job
         </p>
+        <img className="occupation-bg" src={bg} alt="" />
       </ResponseContainer>
     </div>
   );
