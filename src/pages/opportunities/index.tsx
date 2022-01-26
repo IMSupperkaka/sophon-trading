@@ -1,12 +1,13 @@
 import React from "react";
 import { DownloadOutlined, TwitterOutlined } from "@ant-design/icons";
 
-import downloadPath from "../../static/logo.png";
+import ResponseContainer from "../../components/response-container";
+
 import "./index.less";
 
 const Opportunities: React.FC = () => {
   return (
-    <div className="opportunities-content">
+    <ResponseContainer className="opportunities-content">
       <h2>Get in touch.</h2>
       <div className="opportunities-contact">
         <div className="opportunities-contact-icon">
@@ -38,11 +39,11 @@ const Opportunities: React.FC = () => {
         </div>
         contact@jumpcrypto.com
       </div>
-      <a download href={downloadPath} className="opportunities-download-btn">
+      <a download href="/logo.zip" className="opportunities-download-btn">
         Package
         <DownloadOutlined className="opportunities-download-icon" />
       </a>
-    </div>
+    </ResponseContainer>
   );
 };
 

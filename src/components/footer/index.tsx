@@ -1,11 +1,16 @@
 import React from "react";
+
+import ResponseContainer from "../response-container";
+
 import "./index.less";
 
 const Footer: React.FC = () => (
   <div className="sophon-footer">
-    <div className="sophon-footer-content">
-      Subscribe to think, twitter, email 2021@xxx{" "}
-    </div>
+    <ResponseContainer>
+      <div className="sophon-footer-content">
+        Subscribe to think, twitter, email 2021@xxx{" "}
+      </div>
+    </ResponseContainer>
   </div>
 );
 
