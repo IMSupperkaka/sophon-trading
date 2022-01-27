@@ -8,7 +8,7 @@ const Footer: React.FC = () => (
   <div className="sophon-footer">
     <ResponseContainer>
       <div className="sophon-footer-content">
-        Subscribe to think, twitter, email 2021@xxx{" "}
+        Subscribe to think, twitter, email 2021
       </div>
     </ResponseContainer>
   </div>

@@ -14,7 +14,7 @@ const Opportunities: React.FC = () => {
           <div className="opportunities-contact-icon">
             <TwitterOutlined />
           </div>
-          contact@jumpcrypto.com
+          @SophonTrading
         </div>
         <div className="opportunities-contact">
           <div className="opportunities-contact-icon">
@@ -38,7 +38,7 @@ const Opportunities: React.FC = () => {
               />
             </svg>
           </div>
-          contact@jumpcrypto.com
+          contact@sophontrading.com
         </div>
       </div>
       <a download href="/logo.zip" className="opportunities-download-btn">
