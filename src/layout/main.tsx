@@ -23,7 +23,8 @@ const Main: React.FC = () => {
       className={classnames(
         "sophon-page",
         !hasHeader && "sophon-page-without-header",
-        !hasFooter && "sophon-page-without-footer"
+        !hasFooter && "sophon-page-without-footer",
+        location.pathname === "/" && "sophone-page-index-page"
       )}
     >
       {hasHeader && <Header />}
